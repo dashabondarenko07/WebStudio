@@ -41,11 +41,17 @@
         <ul class="contacts">
           <li class="contacts-item">
             <a class="contacts-link" href="mailto:info@devstudio.com" lang="en">
+              <svg class="contacts-icon icons-link-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contacts-item">
             <a class="contacts-link" href="tel:+380961111111">
+              <svg class="contacts-icon icons-link-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -226,22 +232,15 @@
 
     <footer class="page-footer">
       <div class="container container-footer">
-        <div>
+        <div class="container-address">
           <a class="logo logo-footer" href="./index.html" lang="en">
             <span class="logo-label" lang="en">Web</span>Studio
           </a>
 
-          <address id="our-contacts" class="address">
-            <ul class="address-list">
-              <li class="address-item">
-                <a
-                  href="https://goo.gl/maps/58FQF5PqVH27Cyir9"
-                  class="address-link-place"
-                >
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
-              </li>
+          <address class="address" id="our-contacts">
+            <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
 
+            <ul class="address-list">
               <li class="address-item">
                 <a
                   class="address-link"
@@ -259,6 +258,41 @@
               </li>
             </ul>
           </address>
+        </div>
+
+        <div class="container-footer-social">
+          <h3 class="footer-social-title">приєднуйтесь</h3>
+
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="icons-link footer-social-link" href="">
+                <svg class="icons-link-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="icons-link footer-social-link">
+                <svg class="icons-link-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="icons-link footer-social-link">
+                <svg class="icons-link-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="icons-link footer-social-link">
+                <svg class="icons-link-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
