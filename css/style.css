@@ -624,7 +624,7 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
+  background-color: transparent;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -734,6 +734,9 @@ img {
 .modal-label {
   margin-bottom: 10px;
   width: 100%;
+}
+.modal-label-text {
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.67;
@@ -760,6 +763,7 @@ img {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  background-color: transparent;
   outline: none;
   transition: border-color var(--transition-duration)
     var(--transition-timing-function);
@@ -775,6 +779,7 @@ img {
 .modal-label-textarea {
 }
 .modal-input-textarea {
+  height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
   font-family: inherit;
