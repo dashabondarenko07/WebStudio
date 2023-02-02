@@ -1,0 +1,45 @@
+.perform {
+}
+.perform__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.perform__list {
+  display: flex;
+}
+.perform__item {
+  width: 370px;
+  height: 294px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.perform__wrap {
+  position: relative;
+}
+.perform__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

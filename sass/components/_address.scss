@@ -1,0 +1,29 @@
+.address {
+  font-style: normal;
+}
+.address__text {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.address__list {
+}
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.address__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.logo-mb{
+    display: block;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,50 @@
+.subs {
+  display: flex;
+  align-items: flex-end;
+}
+.subs__wrap {
+  margin-right: 12px;
+}
+.subs__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subs__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.subs__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.subs__icon {
+  fill: currentColor;
+}
+.subs__icon_left {
+  margin-left: 10px;
+}
