@@ -533,11 +533,15 @@
           </svg>
         </button>
 
-        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="modal__title modal__title_bottom">
+          Залиште свої дані, ми вам передзвонимо
+        </p>
 
         <form class="modal__form">
-          <label class="modal__label" for="order_name">Ім'я</label>
-          <div class="modal__wrap">
+          <label class="modal__label modal__label_bottom" for="order_name"
+            >Ім'я</label
+          >
+          <div class="modal__wrap modal__wrap_bottom">
             <input
               class="modal__input"
               type="text"
@@ -550,8 +554,10 @@
             </svg>
           </div>
 
-          <label class="modal__label" for="order_tel">Телефон</label>
-          <div class="modal__wrap">
+          <label class="modal__label modal__label_bottom" for="order_tel"
+            >Телефон</label
+          >
+          <div class="modal__wrap modal__wrap_bottom">
             <input
               class="modal__input"
               type="tel"
@@ -564,8 +570,10 @@
             </svg>
           </div>
 
-          <label class="modal__label" for="order_email">Пошта</label>
-          <div class="modal__wrap">
+          <label class="modal__label modal__label_bottom" for="order_email"
+            >Пошта</label
+          >
+          <div class="modal__wrap modal__wrap_bottom">
             <input
               class="modal__input"
               type="email"
@@ -577,32 +585,40 @@
             </svg>
           </div>
 
-          <label class="modal__label" for="order_comment">Коментар</label>
+          <label class="modal__label modal__label_bottom" for="order_comment"
+            >Коментар</label
+          >
           <textarea
-            class="modal__textarea"
+            class="modal__textarea modal__textarea_bottom"
             placeholder="Введіть текст"
             name="order_comment"
             id="order_comment"
           ></textarea>
 
-          <div class="modal__wrap-agree">
-            <label class="modal__label-agree" for="order_agree"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="modal__link-agree" href="">Умови договору</a></label
-            >
+          <label
+            class="modal__agree-label modal__agree-label_bottom"
+            for="order_agree"
+          >
             <input
-              class="modal__input-agree visually-hidden"
+              class="modal__agree-input visually-hidden"
               type="checkbox"
               name="order_agree"
               id="order_agree"
               required
             />
-            <svg class="modal__icon-agree" width="11" height="8">
+            <svg
+              class="modal__agree-icon modal__agree-icon_right"
+              width="11"
+              height="8"
+            >
               <use href="./images/icons.svg#icon-agree"></use>
             </svg>
-          </div>
+            <span>Погоджуюся з розсилкою та приймаю</span>
+            &nbsp;
+            <a class="modal__agree-link" href=""> Умови договору</a>
+          </label>
 
-          <button class="button button_center modal__button_send" type="submit">
+          <button class="button modal__button_send" type="submit">
             Відправити
           </button>
         </form>

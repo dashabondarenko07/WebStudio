@@ -3,6 +3,8 @@
   height: 50px;
   align-items: center;
   text-align: center;
+  font-weight: 700;
+  @include font(1.88, 16px, 0.06em);
   color: #ffffff;
   background-color: $color-accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
