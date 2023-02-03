@@ -1,0 +1,9 @@
+@mixin font($lh: 1.14, $fs: 14px, $ls: 0.03em) {
+  line-height: $lh;
+  font-size: $fs;
+  letter-spacing: $ls;
+}
+
+@mixin grid-quantity($quantity) {
+  flex-basis: calc(100% / $quantity - 30px);
+}

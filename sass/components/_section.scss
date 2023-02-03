@@ -4,6 +4,12 @@
 .section_padding_bottom {
   padding-bottom: 94px;
 }
-.section_footer{
-  padding: 60px 0;
+
+.section__title {
+  @include font(1.17, 36px);
+  text-align: center;
+  color: $color-title-primary;
+}
+.section__title_bottom {
+  margin-bottom: 50px;
 }

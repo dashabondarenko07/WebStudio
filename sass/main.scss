@@ -1,28 +1,33 @@
-@import "./utils/_variables.scss";
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./utils/visually-hidden";
 @import "./utils/is-hidden";
 
-@import "./base/_reset.scss";
+@import "./vendors/normalize";
+
+@import "./base/common.scss";
+@import "./base/reset.scss";
+@import "./base/typographic";
 
 @import "./layout/header.scss";
+@import "./layout/footer.scss";
 @import "./layout/hero.scss";
 @import "./layout/preference.scss";
 @import "./layout/perform.scss";
 @import "./layout/team.scss";
 @import "./layout/clients.scss";
-@import "./layout/footer.scss";
 @import "./layout/portfolio.scss";
 
 @import "./components/container";
-@import "./components/social";
+@import "./components/section";
+@import "./components/button";
+@import "./components/grid";
 @import "./components/logo";
-@import "./components/address";
+@import "./components/social";
 @import "./components/contacts";
 @import "./components/nav";
-@import "./components/section";
-@import "./components/modal";
+@import "./components/address";
 @import "./components/subs";
-@import "./components/button";
+@import "./components/modal";
 @import "./components/filter";
-@import "./components/grid";
 @import "./components/gallery";

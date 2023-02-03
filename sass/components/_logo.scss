@@ -1,13 +1,11 @@
 .logo {
   display: block;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  @include font(1.19, 26px);
 }
 .logo__label {
-  color: #2196f3;
+  color: $color-accent;
 }
 .logo_color_dark {
   color: #000000;

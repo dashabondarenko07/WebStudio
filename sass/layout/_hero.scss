@@ -19,23 +19,20 @@
 .hero__title {
   display: block;
   margin: 0 auto;
-
   width: 696px;
-  margin-bottom: 30px;
-
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  @include font(1.36, 44px, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
+.hero__title_bottom {
+  margin-bottom: 30px;
+}
 .hero__button {
+  display: block;
+  margin: 0 auto;
   width: 216px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+  @include font(16px, 1.88, 0.06em);
 }

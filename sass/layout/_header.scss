@@ -1,9 +1,10 @@
 .header {
+  background-color: #fff;
   border: 1px solid #ececec;
 }
 .header__container {
   display: flex;
 }
-.header__nav {
-  display: flex;
+.header__nav_right {
+  margin-right: auto;
 }

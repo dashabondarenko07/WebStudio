@@ -4,46 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title lang="en">WebStudio</title>
   </head>
 
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="nav header__nav">
-          <a class="logo nav__logo" href="./index.html" lang="en">
+        <nav class="nav header__nav_right">
+          <a
+            class="logo nav__logo nav__logo_right"
+            href="./index.html"
+            lang="en"
+          >
             <span class="logo__label" lang="en">Web</span
             ><span class="logo_color_dark">Studio</span>
           </a>
 
           <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link_active" href="./index.html"
+            <li class="nav__item_right">
+              <a class="nav__link nav__link_after" href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="nav__item">
+            <li class="nav__item_right">
               <a class="nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item_right">
               <a class="nav__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <ul class="contacts">
-          <li class="contacts__item">
+          <li class="contacts__item_right">
             <a
               class="contacts__link"
               href="mailto:info@devstudio.com"
@@ -59,7 +53,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item_right">
             <a class="contacts__link" href="tel:+380961111111">
               <svg
                 class="contacts__icon contacts__icon_right"
@@ -78,7 +72,9 @@
     <main>
       <section class="hero hero__center hero__background">
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__title hero__title_bottom">
+            Ефективні рішення для вашого бізнесу
+          </h1>
           <button
             class="button button_center hero__button"
             type="button"
@@ -93,52 +89,60 @@
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
 
-          <ul class="preference__list">
-            <li class="preference__item">
-              <div class="preference__wrap">
+          <ul class="grid preference__list">
+            <li class="grid__item preference__item">
+              <div class="preference__wrap preference__wrap_bottom">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="preference__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="preference__title preference__title_bottom">
+                УВАГА ДО ДЕТАЛЕЙ
+              </h3>
               <p class="preference__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
 
-            <li class="preference__item">
-              <div class="preference__wrap">
+            <li class="grid__item preference__item">
+              <div class="preference__wrap preference__wrap_bottom">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="preference__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="preference__title preference__title_bottom">
+                ПУНКТУАЛЬНІСТЬ
+              </h3>
               <p class="preference__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
 
-            <li class="preference__item">
-              <div class="preference__wrap">
+            <li class="grid__item preference__item">
+              <div class="preference__wrap preference__wrap_bottom">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="preference__title">ПЛАНУВАННЯ</h3>
+              <h3 class="preference__title preference__title_bottom">
+                ПЛАНУВАННЯ
+              </h3>
               <p class="preference__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="preference__item">
-              <div class="preference__wrap">
+            <li class="grid__item preference__item">
+              <div class="preference__wrap preference__wrap_bottom">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="preference__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="preference__title preference__title_bottom">
+                СУЧАСНІ ТЕХНОЛОГІЇ
+              </h3>
               <p class="preference__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -150,16 +154,18 @@
 
       <section class="perform section_padding_top section_padding_bottom">
         <div class="container">
-          <h2 class="perform__title">Чим ми займаємося</h2>
+          <h2 class="perform__title section__title section__title_bottom">
+            Чим ми займаємося
+          </h2>
 
-          <ul class="perform__list">
-            <li class="perform__item">
+          <ul class="grid perform__list">
+            <li class="grid__item perform__item">
               <figure class="perform__wrap">
                 <img src="./images/1x/we-are-doing-1.jpg" alt="" width="370" />
                 <figcaption class="perform__text">Десктопні додатки</figcaption>
               </figure>
             </li>
-            <li class="perform__item">
+            <li class="grid__item perform__item">
               <figure class="perform__wrap">
                 <img
                   class="we-are-doing-img"
@@ -170,7 +176,7 @@
                 <figcaption class="perform__text">Мобільні додатки</figcaption>
               </figure>
             </li>
-            <li class="perform__item">
+            <li class="grid__item perform__item">
               <figure class="perform__wrap">
                 <img
                   class="we-are-doing-img"
@@ -189,19 +195,22 @@
 
       <section class="team section_padding_top section_padding_bottom">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="team__title section__title section__title_bottom">
+            Наша команда
+          </h2>
 
-          <ul class="team__list">
-            <li class="team__item">
+          <ul class="grid team__list">
+            <li class="grid__item team__item">
               <img
-                class="team__img"
                 src="./images/1x/team-1.jpg"
                 alt="Чоловік у темно-бордовій сорочці"
                 width="270"
               />
               <div class="team__wrap">
-                <h3 class="team__name">Ігор Дем'яненко</h3>
-                <p class="team__text" lang="en">Product Designer</p>
+                <h3 class="team__name team__name_bottom">Ігор Дем'яненко</h3>
+                <p class="team__text team__text_bottom" lang="en">
+                  Product Designer
+                </p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link team__social-link">
@@ -235,16 +244,17 @@
               </div>
             </li>
 
-            <li class="team__item">
+            <li class="grid__item team__item">
               <img
-                class="team__img"
                 src="./images/1x/team-2.jpg"
                 alt="Жінка в чорному жакеті"
                 width="270"
               />
               <div class="team__wrap">
-                <h3 class="team__name">Ольга Рєпіна</h3>
-                <p class="team__text" lang="en">Frontend Developer</p>
+                <h3 class="team__name team__name_bottom">Ольга Рєпіна</h3>
+                <p class="team__text team__text_bottom" lang="en">
+                  Frontend Developer
+                </p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link team__social-link">
@@ -278,16 +288,15 @@
               </div>
             </li>
 
-            <li class="team__item">
+            <li class="grid__item team__item">
               <img
-                class="team__img"
                 src="./images/1x/team-3.jpg"
                 alt="Чоловік у сіро-блакитній сорочці"
                 width="270"
               />
               <div class="team__wrap">
-                <h3 class="team__name">Микола Тарасов</h3>
-                <p class="team__text" lang="en">Marketing</p>
+                <h3 class="team__name team__name_bottom">Микола Тарасов</h3>
+                <p class="team__text team__text_bottom" lang="en">Marketing</p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link team__social-link">
@@ -321,16 +330,17 @@
               </div>
             </li>
 
-            <li class="team__item">
+            <li class="grid__item team__item">
               <img
-                class="team__img"
                 src="./images/1x/team-4.jpg"
                 alt="Чоловік у чорній футболці"
                 width="270"
               />
               <div class="team__wrap">
-                <h3 class="team__name">Михайло Єрмаков</h3>
-                <p class="team__text" lang="en">UI Designer</p>
+                <h3 class="team__name team__name_bottom">Михайло Єрмаков</h3>
+                <p class="team__text team__text_bottom" lang="en">
+                  UI Designer
+                </p>
                 <ul class="social">
                   <li class="social__item">
                     <a href="" class="social__link team__social-link">
@@ -369,17 +379,19 @@
 
       <section class="clients section_padding_top section_padding_bottom">
         <div class="container">
-          <h2 class="clients__title">Постійні клієнти</h2>
+          <h2 class="clients__title section__title section__title_bottom">
+            Постійні клієнти
+          </h2>
 
-          <ul class="clients__list">
-            <li class="clients__item">
+          <ul class="grid clients__list">
+            <li class="grid__item clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-ya-and-co"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use
@@ -388,28 +400,28 @@
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-foster-reters"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-logo-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__item">
+            <li class="grid__item clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon" width="106" height="60">
                   <use
@@ -423,16 +435,18 @@
       </section>
     </main>
 
-    <footer class="footer section_footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__container_left">
-          <a class="logo logo-mb" href="./index.html" lang="en">
+          <a class="logo footer__logo_bottom" href="./index.html" lang="en">
             <span class="logo__label" lang="en">Web</span
             ><span class="logo_color_light">Studio</span>
           </a>
 
           <address class="address">
-            <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+            <p class="address__text address__text_bottom">
+              м. Київ, пр-т Лесі Українки, 26
+            </p>
 
             <ul class="address__list">
               <li class="address__item">
@@ -454,7 +468,7 @@
         </div>
 
         <div class="footer__container_center">
-          <p class="footer__text">приєднуйтесь</p>
+          <p class="footer__text footer__text_bottom">приєднуйтесь</p>
 
           <ul class="social">
             <li class="social__item">
@@ -489,8 +503,10 @@
         </div>
 
         <form class="subs">
-          <div class="subs__wrap">
-            <p class="subs__title">Підпишіться на розсилку</p>
+          <div class="subs__wrap_left">
+            <p class="subs__title subs__title_bottom">
+              Підпишіться на розсилку
+            </p>
             <input
               class="subs__input"
               type="email"

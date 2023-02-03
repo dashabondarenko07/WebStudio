@@ -2,37 +2,23 @@
   display: flex;
   justify-content: center;
 }
-.filter__item {
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+.filter__item_right:not(:last-child) {
+  margin-right: 8px;
 }
 .filter__button {
   padding: 6px 22px;
-
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  @include font(1.63, 16px);
   text-align: center;
-  letter-spacing: 0.03em;
-
   color: #212121;
   background-color: #f5f4fa;
 
-  border: 0;
-  border-radius: 4px;
-
   &:active,
   &:focus {
-    padding: 6px 25px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-
+    padding-right: 25px;
+    padding-left: 25px;
     color: #ffffff;
-    background-color: #2196f3;
+    background-color: $color-accent;
   }
 
   &:hover,

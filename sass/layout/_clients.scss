@@ -1,23 +1,13 @@
 .clients {
 }
 .clients__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 .clients__list {
-  display: flex;
 }
 .clients__item {
+  @include grid-quantity(6);
   width: 170px;
   height: 92px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .clients__link {
   display: flex;
@@ -25,13 +15,13 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  color: #afb1b8;
+  color: $color-icon-primary;
   border: 1px solid currentColor;
   border-radius: 4px;
 
   &:hover,
   &:focus {
-    color: #2196f3;
+    color: $color-accent;
     border-color: currentColor;
   }
 }
