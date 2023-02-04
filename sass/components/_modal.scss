@@ -37,9 +37,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.modal__button_close:hover .modal__icon-close,
-.modal__button_close:focus .modal__icon-close {
-  fill: $color-accent;
+.modal__icon-close {
+  fill: #000000;
+  transition: fill $t-duration $t-timing-func;
+
+  .modal__button_close:hover &,
+  .modal__button_close:focus & {
+    fill: $color-accent;
+  }
 }
 
 .modal__title {
@@ -77,23 +82,21 @@
   color: #212121;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
+  transition: border-color $t-duration $t-timing-func;
+
+  &:focus {
+    border-color: $color-accent;
+  }
 }
 
 .modal__input {
   height: 40px;
   padding-left: 42px;
-
-  &:focus {
-    border-color: $color-accent;
-  }
 }
 .modal__textarea {
   height: 120px;
   padding: 12px 16px;
 
-  &:focus {
-    border-color: $color-accent;
-  }
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
@@ -107,6 +110,7 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill $t-duration $t-timing-func;
 
   .modal__input:focus + & {
     fill: $color-accent;
@@ -129,6 +133,8 @@
   border: 2px solid #212121;
   border-radius: 2px;
   fill: transparent;
+  transition: background-color $t-duration $t-timing-func,
+    border $t-duration $t-timing-func, fill $t-duration $t-timing-func;
 
   .modal__agree-input:checked + & {
     background-color: $color-accent;

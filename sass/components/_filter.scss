@@ -12,6 +12,11 @@
   text-align: center;
   color: #212121;
   background-color: #f5f4fa;
+  transition: background-color $t-duration $t-timing-func,
+    padding-right $t-duration $t-timing-func,
+    padding-left $t-duration $t-timing-func, 
+    color $t-duration $t-timing-func,
+    box-shadow $t-duration $t-timing-func;
 
   &:active,
   &:focus {

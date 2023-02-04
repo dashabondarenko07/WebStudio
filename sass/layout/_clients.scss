@@ -18,6 +18,8 @@
   color: $color-icon-primary;
   border: 1px solid currentColor;
   border-radius: $border-radius;
+  transition: color $t-duration $t-timing-func,
+    border-color $t-duration $t-timing-func;
 
   &:hover,
   &:focus {

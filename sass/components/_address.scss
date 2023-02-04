@@ -13,7 +13,6 @@
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .address__link {
   @include font(1.71);
   color: rgba(255, 255, 255, 0.6);

@@ -5,7 +5,6 @@
 .contacts__item_right:not(:last-child) {
   margin-right: 30px;
 }
-
 .contacts__link {
   display: flex;
   align-items: center;
@@ -13,6 +12,7 @@
   font-weight: 500;
   @include font($ls: 0.02em);
   color: $color-text-primary;
+  transition: color $t-duration $t-timing-func;
 
   &:hover,
   &:focus {

@@ -20,6 +20,7 @@
   font-weight: 500;
   @include font($ls: 0.02em);
   color: #212121;
+  transition: color $t-duration $t-timing-func;
 
   &:hover,
   &:focus {
