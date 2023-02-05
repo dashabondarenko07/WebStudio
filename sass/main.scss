@@ -17,17 +17,16 @@
 @import "./layout/team.scss";
 @import "./layout/clients.scss";
 @import "./layout/portfolio.scss";
+@import "./layout/grid.scss";
 
 @import "./components/container";
 @import "./components/section";
 @import "./components/button";
-@import "./components/grid";
 @import "./components/logo";
 @import "./components/social";
-@import "./components/contacts";
-@import "./components/nav";
-@import "./components/address";
-@import "./components/subs";
 @import "./components/modal";
+@import "./components/menu";
+
 @import "./components/filter";
 @import "./components/gallery";
+

@@ -1,15 +1,31 @@
 .section_padding_top {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 .section_padding_bottom {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-  @include font(1.17, 36px);
+  @include font(1.18, 28px);
   text-align: center;
   color: $color-title-primary;
+
+  @media screen and (min-width: 1200px) {
+    @include font(1.17, 36px);
+  }
 }
 .section__title_bottom {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }

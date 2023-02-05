@@ -24,10 +24,15 @@ h5,
 h6,
 p,
 ul,
-figure {
+figure,
+input {
   margin: 0;
 }
 
 textarea {
   resize: none;
+}
+
+address{
+  font-style: normal;
 }

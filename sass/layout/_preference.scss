@@ -1,10 +1,17 @@
-.preference {
-}
-.preference__list {
-}
 .preference__item {
-  @include grid-quantity(4);
-  width: 270px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    @include grid-quantity(2);
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include grid-quantity(4);
+    width: 270px;
+  }
 }
 .preference__wrap {
   display: flex;
@@ -22,6 +29,10 @@
   @include font();
   text-transform: uppercase;
   color: $color-title-primary;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .preference__title_bottom {
   margin-bottom: 10px;

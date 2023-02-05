@@ -1,32 +1,43 @@
 .team {
   background-color: #f5f4fa;
 }
-.team__title {
-}
-.team__list {
-}
 .team__item {
-  @include grid-quantity(4);
-  width: 270px;
+  width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    @include grid-quantity(2);
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include grid-quantity(4);
+    width: 270px;
+  }
 }
 .team__wrap {
-  padding: 30px 0;
+  padding: 30px 0 24px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .team__name {
   font-weight: 500;
-  @include font(1.18, 16px);
+  @include font(1.19, 16px);
   color: $color-title-primary;
 }
 .team__name_bottom {
   margin-bottom: 10px;
 }
 .team__text {
-  @include font(1.18, 16px);
+  @include font(1.19, 16px);
   color: $color-text-primary;
 }
 .team__text_bottom {
@@ -34,8 +45,7 @@
 }
 .team__social-link {
   color: $color-icon-primary;
-  transition: color $t-duration $t-timing-func,
-    background-color $t-duration $t-timing-func;
+  transition: color $t-duration $t-timing-func, background-color $t-duration $t-timing-func;
 
   &:hover,
   &:focus {

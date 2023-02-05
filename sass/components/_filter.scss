@@ -1,21 +1,32 @@
 .filter {
   display: flex;
-  justify-content: center;
+  margin-left: -8px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-top: -15px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
-.filter__item_right:not(:last-child) {
-  margin-right: 8px;
+.filter__item_right {
+  margin-left: 8px;
+}
+.filter__item_bottom {
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
 }
 .filter__button {
   padding: 6px 22px;
   font-weight: 500;
   @include font(1.63, 16px);
-  text-align: center;
   color: #212121;
   background-color: #f5f4fa;
   transition: background-color $t-duration $t-timing-func,
     padding-right $t-duration $t-timing-func,
-    padding-left $t-duration $t-timing-func, 
-    color $t-duration $t-timing-func,
+    padding-left $t-duration $t-timing-func, color $t-duration $t-timing-func,
     box-shadow $t-duration $t-timing-func;
 
   &:active,

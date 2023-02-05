@@ -1,16 +1,23 @@
-.gallery {
-}
 .gallery__item {
-  @include grid-quantity(3);
-  width: 370px;
+  width: 100%;
   transition: box-shadow $t-duration $t-timing-func;
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-}
-.gallery__link {
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    @include grid-quantity(2);
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include grid-quantity(3);
+    width: 370px;
+  }
 }
 .gallery__wrap-img {
   position: relative;
@@ -45,6 +52,9 @@
 .gallery__title {
   @include font(2, 18px, 0.06em);
   color: $color-title-primary;
+}
+.gallery__title_bottom {
+  margin-bottom: 4px;
 }
 .gallery__text {
   @include font(1.88, 16px);

@@ -1,4 +1,7 @@
 .perform {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .perform__title {
 }
